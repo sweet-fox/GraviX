@@ -1,2 +1,2 @@
 # GraviX
-physics engine for games
+Physics engine for games
