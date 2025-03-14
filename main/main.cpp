@@ -1,6 +1,6 @@
-#include "mesh.hpp"
-#include "obj.hpp"
-#include "SAT.hpp"
+#include "collide/algorithms/SAT/SAT.hpp"
+#include "read/obj.hpp"
+#include "mesh/mesh.hpp"
 #include <iostream>
 
 using namespace std;

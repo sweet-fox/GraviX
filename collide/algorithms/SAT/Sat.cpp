@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
-#include "SAT.hpp"
-#include "mesh.hpp"
+#include "collide/algorithms/SAT/SAT.hpp"
+#include "mesh/mesh.hpp"
 
 using namespace std;
 

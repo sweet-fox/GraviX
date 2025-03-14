@@ -7,8 +7,8 @@
 // It is provided to read other data, but for now this is not needed.
 
 #include <iostream>
-#include <mesh.hpp>
-#include "obj.hpp"
+#include "mesh/mesh.hpp"
+#include "read/obj.hpp"
 #include <vector>
 #include <fstream>
 #include <sstream>
