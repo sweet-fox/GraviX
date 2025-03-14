@@ -5,6 +5,7 @@
 // EN
 // Header file mesh. Describes the storage class for 3D models.
 // It is possible to add functions as development progresses.
+#pragma once
 
 #include <iostream>
 #include <vector>
@@ -24,19 +25,16 @@ struct Vec3D {
 //RU Структура точки
 //EN Vertex structure
 
-struct Vertex : public Vec3D {
+struct Vertex {
     Vec3D pos;
-    Vertex() :  Vec3D() {}
-    Vertex(float _x, float _y, float _z) : 
-           pos (_x, _y, _z) {}
+    Vertex() :  pos() {}
+    Vertex(float _x, float _y, float _z) : pos (_x, _y, _z) {}
 };
-
-//RU Структура Face
-//EN Face structure
 
 //RU Структура Mesh
 //EN Mesh structure
 
 struct Mesh {
     vector <Vertex> vertices;
+    Mesh() {}
 };

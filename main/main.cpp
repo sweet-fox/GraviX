@@ -6,13 +6,19 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+
     Mesh mesh1;
     Mesh mesh2;
 
-    LoadOBJ(argv[0], Mesh* mesh1);
-    LoadOBJ(argv[1], Mesh* mesh2);
+    LoadOBJ(argv[0], mesh1);
+    LoadOBJ(argv[1], mesh2);
 
-    cout << IsSATCollision(mesh1.verticles, mesh2.verticles);
+    if (IsSATCollision(mesh1, mesh2)){
+        cout << "have collision";
+    }
+    else{
+        cout << "not have collision";
+    }
 
     return 0;
 }

@@ -4,4 +4,4 @@
 
 using namespace std;
 
-bool IsSATCollision(const vector<Mesh> mesh1, const vector<Mesh> mesh2);
+bool IsSATCollision(const  Mesh mesh1, const Mesh mesh2);

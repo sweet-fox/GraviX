@@ -9,4 +9,4 @@
 
 using namespace std;
 
-bool LoadOBJ (const string filename, Mesh* Mesh);
+bool LoadOBJ (const string filename, Mesh& mesh);

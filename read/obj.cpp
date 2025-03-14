@@ -15,7 +15,7 @@
 
 using namespace std;
 
-bool LoadOBJ (const string filename, Mesh* Mesh) {
+bool LoadOBJ (const string filename, Mesh& mesh) {
     ifstream file(filename);
     if (!file.is_open()) {
         cout << "ERROR: Failed to open file!";
@@ -32,10 +32,12 @@ bool LoadOBJ (const string filename, Mesh* Mesh) {
 
         if(param == "v"){
             Line >> x >> y >> z;
-            (*Mesh).vertices.push_back(Vertex(x,y,z));
+            cout << x << y << z;
+            mesh.vertices.emplace_back(x, y, z);
         }
         //else if(param == "vt"){}
         //else if(param == "vn"){}
         //else if(param == "vt"){}
-    }  
+    }
+    return 1; 
 }
