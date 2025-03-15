@@ -10,8 +10,10 @@ int main(int argc, char* argv[]) {
     Mesh mesh1;
     Mesh mesh2;
 
-    LoadOBJ(argv[0], mesh1);
-    LoadOBJ(argv[1], mesh2);
+    cout << argv[1] << endl << argv[2] << endl;
+
+    LoadOBJ(argv[1], mesh1);
+    LoadOBJ(argv[2], mesh2);
 
     if (IsSATCollision(mesh1, mesh2)){
         cout << "have collision";

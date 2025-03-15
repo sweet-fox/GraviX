@@ -17,7 +17,7 @@ using namespace std;
 
 struct Vec3D {
     float x, y, z;
-    Vec3D() : x(0.0), y(0.0), z(0.0) {}
+    Vec3D(){}
     Vec3D(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}
 };
 
