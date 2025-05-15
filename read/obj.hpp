@@ -5,7 +5,7 @@
 // Header file for reading obj files.
 
 #include <iostream>
-#include "mesh/mesh.hpp"
+#include "core/mesh/mesh.hpp"
 
 using namespace std;
 

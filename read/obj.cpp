@@ -7,7 +7,7 @@
 // It is provided to read other data, but for now this is not needed.
 
 #include <iostream>
-#include "mesh/mesh.hpp"
+#include "core/mesh/mesh.hpp"
 #include "read/obj.hpp"
 #include <vector>
 #include <fstream>
@@ -32,12 +32,14 @@ bool LoadOBJ (const string filename, Mesh& mesh) {
 
         if(param == "v"){
             Line >> x >> y >> z;
-            cout << x << y << z;
             mesh.vertices.emplace_back(x, y, z);
         }
+        else if(param == "vn"){
+            Line >> x >> y >> z;
+            mesh.normals.emplace_back(x, y, z);
+        }
         //else if(param == "vt"){}
-        //else if(param == "vn"){}
-        //else if(param == "vt"){}
+        //else if(param == "vf"){}
     }
     return 1; 
 }
