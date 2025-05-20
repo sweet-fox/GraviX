@@ -37,7 +37,7 @@ Vec3D Vec3D::operator*(float scalar) const{
 }
 
 ostream& operator<<(ostream& stream, const Vec3D& vec){
-    stream << "Value: " << "X (" << vec.getX() << ") Y(" << vec.getY() << ") Z(" << vec.getZ() << ")";
+    stream << "Value: " << "X (" << vec.getX() << ") Y(" << vec.getY() << ") Z(" << vec.getZ() << ")"<< endl;
     return stream;
 }
 
@@ -45,13 +45,9 @@ float Vec3D::len(){
     return (pow((pow(x, 2)+pow(y, 2)+pow(z, 2)),0.5));
 }
 
-void Vec3D::print(){
-    cout << endl << "X(" << x << ") Y(" << y << ") Z(" << z << ")" << endl;
+/*---------------support_functions---------------*/
+
+float projection(Vec3D a, Vec3D b){
+        return ((a*b)/b.len());
 }
 
-//Vertex
-
-void Vertex::print(){
-        cout << "Vec3D is:";
-        pos.print();
-}

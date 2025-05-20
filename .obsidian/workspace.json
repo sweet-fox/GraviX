@@ -11,10 +11,14 @@
             "id": "a2d44032137b3813",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "documentation/SAT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SAT"
             }
           }
         ]
@@ -178,13 +182,25 @@
   },
   "active": "a2d44032137b3813",
   "lastOpenFiles": [
+    "tests/test6.mtl",
+    "tests/test6.obj",
+    "tests/test5.mtl",
+    "tests/test5.obj",
+    "documentation/Simple.md",
     "documentation/What has Unreal.md",
+    "stash/graviX.png",
+    "stash/graviX.png.tmp$$",
+    "stash/graviX_logo.png",
+    "stash/graviX_logo.png.tmp$$",
+    "stash/graviX_logo.svg",
+    "stash/GraviX_logo.svg",
+    "stash/physics_engine_algorithms.md",
+    "README.md",
     "documentation/Raycasting, Line Tracing.md",
     "documentation/SAT.md",
     "documentation/Bounding Volume Hierarchies.md",
     "documentation/algorithms.canvas",
     "ToDo.md",
-    "README.md",
     "Untitled.canvas",
     "documentation/Sweep and Prune.md",
     "documentation/Support function.md",
@@ -194,20 +210,12 @@
     "documentation/Complex Collision.md",
     "documentation/Broad Phase.md",
     "documentation/Narrow Phase.md",
-    "documentation/Simple.md",
-    "stash/physics_engine_algorithms.md",
     "documentation",
-    "stash/GraviX_logo.svg",
     "stash/NEED.md",
     "stash/Untitled-3.svg",
     "stash",
     "a.exe",
     "physics/collide/algorithms/SAT/SAT.hpp",
-    "physics/collide/algorithms/SAT/SAT.cpp",
-    "physics/collide/algorithms/SAT",
-    "physics/collide/algorithms",
-    "physics/collide",
-    "physics",
-    "core/mesh/mesh.hpp"
+    "physics/collide/algorithms/SAT/SAT.cpp"
   ]
 }

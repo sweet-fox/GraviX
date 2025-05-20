@@ -4,6 +4,7 @@
 
 using namespace std;
 
-bool IsSATCollision(const  Mesh& mesh1, const Mesh& mesh2);{
-    
-}
+//RU Структура точки
+//EN Vertex structure
+
+bool IsSATCollision(const  Mesh& mesh1, const Mesh& mesh2);

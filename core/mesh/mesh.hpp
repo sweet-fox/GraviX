@@ -5,9 +5,9 @@
 // EN
 // Header file mesh. Describes the storage class for 3D models.
 // It is possible to add functions as development progresses.
+
 #pragma once
 
-#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -53,11 +53,9 @@ public:
     Vertex(float _x, float _y, float _z) : pos (_x, _y, _z) {}
     ~Vertex(){}
 
-    Vec3D GetPosition(){return pos;}
+    Vec3D GetPosition()const{return pos;}
     void SetPosition(Vec3D vec){pos.setX(vec.getX()); pos.setY(vec.getY()); pos.setZ(vec.getZ());}
     void SetPosition(float x, float y, float z){pos.setX(x); pos.setY(y); pos.setZ(z);}
-
-    void print();
 };
 
 //RU Структура Normal
@@ -70,6 +68,10 @@ public:
     Normal() : normal() {}
     Normal(float _x, float _y, float _z) : normal(_x, _y, _z) {}
     ~Normal(){}
+
+    Vec3D GetNormal(){return normal;}
+    void SetNormal(Vec3D vec){normal.setX(vec.getX()); normal.setY(vec.getY()); normal.setZ(vec.getZ());}
+    void SetNormal(float x, float y, float z){normal.setX(x); normal.setY(y); normal.setZ(z);}
 };
 
 //RU Структура Mesh
@@ -86,3 +88,5 @@ public:
 
 //RU вспомогательные функции 
 //EN support functions
+
+float projection(Vec3D a, Vec3D b);
