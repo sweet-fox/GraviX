@@ -1,0 +1,29 @@
+THIS IS DOCUMENTATION RULES
+
+Main rules
+1.Each file should start with an introduction and a detailed description of what it is and what it is for
+2.Each class should have a detailed description of why and what it is needed for
+3.Each function should have a detailed description of why and what it is needed for
+
+Rules for the design
+
+1.The file must begin with its title and a license description and description
+File start example
+/*-------------------- <FileName> - <Short Description> ---------------------*\
+| Part of the Physics Engine, under the MIT License.                          |
+| SPDX-License-Identifier: MIT                                                |
+\*---------------------------------------------------------------------------*/
+
+/*------------------------------- Description -------------------------------*\
+| <detailed description>                                                      |
+\*---------------------------------------------------------------------------*/
+
+2.The class should start with a description of why it is needed
+Class start example
+/*------------------------------- Description -------------------------------*/
+/*<detailed description>*/
+
+3.The function should start with a description of why it is needed
+Function start example
+
+/*Description: <detailed description> */

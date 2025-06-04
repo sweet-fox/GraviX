@@ -1,9 +1,21 @@
+/*-------------------- <Sat.cpp> - <Sat algorithm file> ---------------------*\
+| Part of the Physics Engine, under the MIT License.                          |
+| SPDX-License-Identifier: MIT                                                |
+\*---------------------------------------------------------------------------*/
+
+/*------------------------------- Description -------------------------------*\
+| This file contains the main function of the SAT collision algorithm.        |                                              |
+\*---------------------------------------------------------------------------*/
+
 #include <vector>
 #include <iostream>
 #include "physics/collide/algorithms/SAT/SAT.hpp"
 #include "core/mesh/mesh.hpp"
 
 using namespace std;
+
+/*Description: The main function of the SAT algorithm takes 2
+Mesh objects and uses a projection system to find collisions */
 
 bool IsSATCollision(const Mesh& mesh1, const Mesh& mesh2){
     for(Normal normal : mesh1.normals){
